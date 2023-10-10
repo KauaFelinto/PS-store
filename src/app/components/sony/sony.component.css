@@ -1,0 +1,17 @@
+header{
+    width: 100%;
+    height: 35px;
+    background-color: black;
+}
+.logo-sony{
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+}
+.logo-sony > img{
+    width: 80px;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
