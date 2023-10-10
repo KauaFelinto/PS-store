@@ -10,6 +10,7 @@ import { CardLabelComponent } from './components/card/card-label/card-label.comp
 import { CardValueComponent } from './components/card/card-value/card-value.component';
 import { SonyComponent } from './components/sony/sony.component';
 import { PageGameComponent } from './content/page-game/page-game.component';
+import { CardValueContentComponent } from './content/card-value-content/card-value-content.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageGameComponent } from './content/page-game/page-game.component';
     CardLabelComponent,
     CardValueComponent,
     SonyComponent,
-    PageGameComponent
+    PageGameComponent,
+    CardValueContentComponent
   ],
   imports: [
     BrowserModule,
