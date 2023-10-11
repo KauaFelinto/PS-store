@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake'
 
 @Component({
   selector: 'app-page-game',
@@ -7,18 +9,35 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PageGameComponent implements OnInit {
   @Input()
-  gameCover:string = "assets/God-of-war.jpg"
+  gameCover:string = ""
   @Input()
   gameLabel:string = ""
   @Input()
   gameName:string = "God of war"
   @Input()
-  gameType:string = "Digital on ps5"
+  gameType:string = ""
   @Input()
   gamePricing:string = "R$149,90"
-  constructor() { }
+
+  private id:string|null = "0"
+
+  constructor(private route:ActivatedRoute) { 
+
+  }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(value => 
+      this.id = value.get("id")
+      )
+
+      this.setValueComponent(this.id)
+  }
+
+  setValueComponent(id:string|null){
+    const result = dataFake.filter(article => article.id == id)[0]
+
+    this.gameName = result.title
+    this.gameCover = result.photo
   }
 
 }

@@ -14,6 +14,8 @@ export class CardComponent implements OnInit {
   gameType:string = "Digital on ps5"
   @Input()
   gamePricing:string = ""
+  @Input()
+  id:string = "0"
   constructor() { }
 
   ngOnInit(): void {
