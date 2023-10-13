@@ -13,7 +13,7 @@ export class PageGameComponent implements OnInit {
   @Input()
   gameLabel:string = ""
   @Input()
-  gameName:string = "God of war"
+  gameName:string = ""
   @Input()
   gameType:string = ""
   @Input()
@@ -38,6 +38,7 @@ export class PageGameComponent implements OnInit {
 
     this.gameName = result.title
     this.gameCover = result.photo
+    this.gameType = result.description
   }
 
 }

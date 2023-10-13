@@ -1,3 +1,4 @@
+<section class="game-section">
 <div class="game-select">
     <div class="game">
         <img class="card-img" [src]="[gameCover]" alt="">
@@ -6,17 +7,17 @@
         gamePricing="{{gamePricing}}"
         ></app-card-value-content>
     </div>
-</div>    
-
+</div>
 <div class="download">
-<div class="right">
-    <div class="sinopse">
-        <h1>{{gameName}}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, corrupti culpa. Doloribus blanditiis est labore neque, temporibus ad? Sit, modi! Unde reiciendis itaque, doloremque repellat sunt obcaecati esse rerum doloribus!</p>
+    <div class="right">
+        <div class="sinopse">
+            <h1>{{gameName}}</h1>
+            <p>{{ gameType }}</p>
+        </div>
+        <div class="downloads">
+            <button>Download for console</button>
+            <button>Download for PC</button>
+        </div>
     </div>
-    <div class="downloads">
-        <button>Download for console</button>
-        <button>Download for PC</button>
     </div>
-</div>
-</div>
+</section>

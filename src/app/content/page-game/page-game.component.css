@@ -22,4 +22,42 @@
 
 
 /*download*/
-.download{}
+.download{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    margin-left: 700px;
+    margin-top: -400px;
+
+    color: aliceblue;
+}
+
+.sinopse > h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.downloads{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 40px;
+}
+.downloads > button{
+    background-color: rgb(72, 72, 252);
+    width: 150px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+.downloads > button:hover{
+    background-color: rgb(9, 9, 44);
+    color: aliceblue;
+    transition: .5s;
+}
