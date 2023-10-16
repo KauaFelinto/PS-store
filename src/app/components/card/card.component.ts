@@ -11,9 +11,13 @@ export class CardComponent implements OnInit {
   @Input()
   gameLabel:string = ""
   @Input()
-  gameType:string = "Digital on ps5"
+  gameType:string = "All plataform"
   @Input()
   gamePricing:string = ""
+  @Input()
+  gameName:string = ""
+  @Input()
+  gameInfo:string = "Fight"
   @Input()
   id:string = "0"
   constructor() { }

@@ -16,8 +16,7 @@ export class PageGameComponent implements OnInit {
   gameName:string = ""
   @Input()
   gameType:string = ""
-  @Input()
-  gamePricing:string = "R$149,90"
+  gamePricing:string = ""
 
   private id:string|null = "0"
 

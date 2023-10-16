@@ -2,10 +2,6 @@
 <div class="game-select">
     <div class="game">
         <img class="card-img" [src]="[gameCover]" alt="">
-        <app-card-value-content
-        gameName="{{gameName}}"
-        gamePricing="{{gamePricing}}"
-        ></app-card-value-content>
     </div>
 </div>
 <div class="download">
@@ -13,6 +9,7 @@
         <div class="sinopse">
             <h1>{{gameName}}</h1>
             <p>{{ gameType }}</p>
+            <button>{{gamePricing}}</button>
         </div>
         <div class="downloads">
             <button>Download for console</button>

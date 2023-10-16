@@ -7,11 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardValueComponent implements OnInit {
   @Input()
-  gameName:string = "God of war"
+  gameName:string = ""
   @Input()
-  gameType:string = "Digital on ps5"
+  gameType:string = ""
   @Input()
   gamePricing:string = ""
+  @Input()
+  gameInfo:string = ""
 
   constructor() { }
 

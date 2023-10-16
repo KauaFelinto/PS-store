@@ -14,6 +14,8 @@ export class CardValueContentComponent implements OnInit {
   gamePricing:string = ""
   @Input()
   gameName:string = ""
+  @Input()
+  gameInfo:string = ""
   constructor() { }
 
   ngOnInit(): void {
